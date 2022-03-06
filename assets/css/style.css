@@ -4,6 +4,8 @@
     padding: 0px;
     color: #ffffff;
     text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     background-color: #444561;
@@ -40,7 +42,7 @@ a{
     text-decoration: none ;
     color: #ffffff;
     height:100%;
-    width: 8%;
+    width: 10%;
     font-size: 24px;
     text-transform: uppercase;
 } 
@@ -127,7 +129,7 @@ color: white;
 .parallaxe{
     Margin: 0px;
     height: auto;
-    height: 70vh;
+    height: 40vh;
     background-image:url("../img/parallaxe.jpg");
   /* Set a specific height */
   min-height: 500px; 
@@ -189,7 +191,7 @@ color: white;
     margin: 0px;
     width: auto;
     height: 5vh;
-    background-color: (68, 69, 97, 0.6)rgba;
+    background-color: rgba(68, 69, 97, 0.6);
     display:flex;
     flex-direction:row;
     justify-content: space-between;
@@ -235,7 +237,7 @@ width: 33.33%;
     text-decoration: none ;
     color: #ffffff;
     height:100%;
-    width: 20%;
+    width: 30%;
     font-size: 24px;
     text-transform: uppercase;
 } 
@@ -315,6 +317,96 @@ width: 33.33%;
     margin:0%;
 
 }
+.controle{
+	
+    display:grid;
+    grid:2rem/repeat(2,1fr);
+    place-items:center
+        
+        }
+        
+    button{
+         
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    background: #eee
+    
+        } 
+        
+        
+    .contenu-carrousel {
+        
+    margin: 5rem auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px
+        
+    }
+    
+    .carrousel {
+        
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     transform-style: preserve-3d;
+     transition: transform 1s;
+        
+    }
+    
+    .carrousel div {
+        
+    backface-visibility: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,.6);
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    outline: 1px solid transparent
+        
+    }
+        
+    .carrousel div:nth-child(1) {
+        
+    transform: rotateY(0) translateZ(270px);
+    background:url(image.jpg) no-repeat center center/cover
+        
+    }
+        
+    .carrousel div:nth-child(2) {
+        
+    transform: rotateY(60deg) translateZ(270px);
+    background:url(image.jpg) no-repeat center center/cover
+    
+    }
+        
+    .carrousel div:nth-child(3) {
+        
+    transform: rotateY(120deg) translateZ(270px);
+    background:url(image.jpg) no-repeat center center/cover
+        
+    }
+        
+    .carrousel div:nth-child(4) {
+        
+    transform: rotateY(180deg) translateZ(270px);
+    background:url(image.jpg) no-repeat center center/cover
+        
+    }
+        
+    .carrousel div:nth-child(5) {
+        
+    transform: rotateY(240deg) translateZ(270px);
+    background:url(image.jpg) no-repeat center center/cover
+        
+    } 
+        
+    .carrousel div:nth-child(6) {
+        
+    transform: rotateY(300deg) translateZ(270px);
+    background:url(image.jpg) no-repeat center center/cover
+        
+    }	
 .breakpoint-container{
     position: relative;
     margin: 0px;

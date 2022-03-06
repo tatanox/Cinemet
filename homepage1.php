@@ -1,30 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="slider.css">
-        <script src="https://kit.fontawesome.com/1a6e3a18e5.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- navbar -->
-        <nav class="nav1">
-            <div class="nav1-container">
-            <div class="nav1-logo"><a href="#" class="nav-btn-logo ">Logo</a></div>
-            <div class="nav1-search"><input type="text" placeholder="Recherche . . ."></div>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="slider.css">
+    <script src="https://kit.fontawesome.com/1a6e3a18e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="nav1">
+        <div class="nav1-container">
+        <div class="nav1-logo"><a href="#" class="nav-btn-logo ">Logo</a></div>
+        <div class="nav1-search"><input type="text" placeholder="Recherche . . ."></div>
+    </div>
+        <div class="nav1-btn-right">
+        <a href="#" class="nav1-btn">Connexion</a>
+        <a href="#" class="nav1-btn">Inscription</a>
         </div>
-            <div class="nav1-btn-right">
-            <a href="#" class="nav1-btn">Sign Up</a>
-            <a href="#" class="nav1-btn"> Sign in</a>
-            </div>
-        </nav>
+    </nav>
     <!-- section carrousselle film selection  -->
     <section class="slider-container">
      <div class="slider">
-        <div class="contenu-carrousel">
+     <div class="contenu-carrousel">
             <div id="carrousel1" class="carrousel">
                 <div></div>
                 <div></div>
@@ -38,12 +40,13 @@
                 <button onclick="carrousel1('-')">❮</button>
                 <button onclick="carrousel1('')">❯</button>
         </div>
-        </div>
+     </div>
     </section>
+    <!-- section slider categorie film -->
     <section class="slider-container-type">
-    <!-- section carrousselle film catégorie  -->
-    <div class="slider-div">
-        <div class="contenu-carrousel">
+        <div class="slider-div">
+            <div class="slider-title"><h2>Categorie</h2></div>
+            <div class="slider-slider"><div class="contenu-carrousel">
             <div id="carrousel2" class="carrousel">
                 <div></div>
                 <div></div>
@@ -58,9 +61,10 @@
                 <button onclick="carrousel2('')">❯</button>
         </div>
     </div>
-    <!-- section carrousselle film catégorie  -->
-    <div class="slider-div">
-        <div class="contenu-carrousel">
+        </div>
+        <div class="slider-div">
+            <div class="slider-title"><H2>Categorie</H2></div>
+            <div class="slider-slider"><div class="contenu-carrousel">
             <div id="carrousel3" class="carrousel">
                 <div></div>
                 <div></div>
@@ -74,22 +78,23 @@
             <button onclick="carrousel3('-')">❮</button>
             <button onclick="carrousel3('')">❯</button>
         </div>
+    </div>
         </div>
-        </section>
-       <!-- breakpoint -->
-       <section class="breakpoint-container">
-           <div class="breakpoint-img"></div>
-           <div class="breakpoint-line"></div>
-       </section>
-       <!-- footer -->
-        <section class="footer">
-            <div class="footer-icon"><i class="fa-brands fa-facebook-f fa-3x"></i></div>
-            <div class="footer-icon"><i class="fa-brands fa-instagram fa-3x"></i></div>
-            <div class="footer-logo"><h2>LOGO</h2></div>
-            <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
-            <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
-        </section>
-    </body>
+    </section>
+   <!-- breakpoint -->
+   <section class="breakpoint-container">
+       <div class="breakpoint-img"></div>
+       <div class="breakpoint-line"></div>
+   </section>
+   <!-- footer -->
+    <section class="footer">
+        <div class="footer-icon"><i class="fa-brands fa-facebook-f fa-3x"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-instagram fa-3x"></i></div>
+        <div class="footer-logo"><h2>LOGO</h2></div>
+        <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
+    </section>
+
     <script>
     var angle1 = 0;
     
@@ -143,6 +148,5 @@
         spinner3.setAttribute("style", "transform:rotateY(" + angle3 + "deg);")
     }
     </script>
-    
-    
+</body>
 </html>

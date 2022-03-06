@@ -1,16 +1,20 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/1a6e3a18e5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- navbar -->
     <nav class="nav">
-        <a href="#" class="nav-btn sign-up">Sign Up</a>
-        <a href="#" class="nav-btn sign-in"> Sign in</a>
+        <a href="#" class="nav-btn sign-up">Connexion</a>
+        <a href="#" class="nav-btn sign-in">Inscription</a>
     </nav>
     <!-- banner -->
     <div class="banner">
@@ -63,10 +67,11 @@
     </section>
     <!-- footer -->
     <section class="footer">
-        <div class="footer-icon"><i class="fa-brands fa-facebook-f"></i></div>
-        <div class="footer-icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-facebook-f fa-3x"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-instagram fa-3x"></i></div>
         <div class="footer-logo"><h2>LOGO</h2></div>
-        <div class="footer-icon"><i class="fa-brands fa-twitter"></i></div>
-        <div class="footer-icon"><i class="fa-brands fa-youtube"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
     </section>
 </body>
+</html>

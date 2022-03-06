@@ -300,36 +300,6 @@ border-bottom-right-radius: 5px;
         
       </div>
     </div>
-
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          loop: true,
-  pagination: '.swiper-pagination',
-  paginationClickable: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  spaceBetween : 5,
-  autoHeight: true,
-          coverflowEffect: {
-            rotate: 5,
-            stretch: 30,
-            depth: 65,
-            modifier: 1,
-            slideShadows: true,
-
-          },
-          pagination: {
-            el: ".swiper-pagination",
-
-          },
-        });
-      </script>
-
 </div>
     </body>
 </html>

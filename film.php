@@ -1,8 +1,12 @@
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/1a6e3a18e5.js" crossorigin="anonymous"></script>
 </head>
@@ -14,8 +18,8 @@
         <div class="nav1-search"><input type="text" placeholder="Recherche . . ."></div>
     </div>
         <div class="nav1-btn-right">
-        <a href="#" class="nav1-btn">Sign Up</a>
-        <a href="#" class="nav1-btn"> Sign in</a> 
+        <a href="#" class="nav1-btn">Connexion</a>
+        <a href="#" class="nav1-btn">Inscription</a> 
         </div>
     </nav> 
     <!-- banner film -->
@@ -41,10 +45,11 @@
     </section>
     <!-- footer -->
     <section class="footer">
-        <div class="footer-icon"><i class="fa-brands fa-facebook-f"></i></div>
-        <div class="footer-icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-facebook-f fa-3x"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-instagram fa-3x"></i></div>
         <div class="footer-logo"><h2>LOGO</h2></div>
-        <div class="footer-icon"><i class="fa-brands fa-twitter"></i></div>
-        <div class="footer-icon"><i class="fa-brands fa-youtube"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
+        <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
     </section>
-</body>  
+</body> 
+</html> 
