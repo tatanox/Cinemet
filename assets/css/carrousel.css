@@ -1,36 +1,80 @@
-.slider0{
-  width: 80%;
-  height: 80%;
-  margin:0 auto;
+.controle {
+
+    display: grid;
+    grid: 2rem/repeat(2, 1fr);
+    place-items: center
 }
 
-.ig-div{
-  width: 800px;
-  height: 100%;
-margin: 0 15px;
+button {
+
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    background: #eee
 }
 
-.divs1{background-image:url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg) center no-repeat !important;
-background-size:cover;
+
+.contenu-carrousel {
+
+    margin: 5rem auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px
 }
-.divs2{background-image:url(https://triple-slider.uiinitiative.com/images/spider-man.jpg) center no-repeat !important;
-background-size:cover;
+
+.carrousel {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
 }
-.divs3{background-image:url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg) center no-repeat !important;
-background-size:cover;
+
+.carrousel div {
+
+    backface-visibility: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    outline: 1px solid transparent
 }
-.divs4{background-image:url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg) center no-repeat !important;
-background-size:cover;
+
+.carrousel div:nth-child(1) {
+
+    transform: rotateY(0) translateZ(270px);
+    background: url(image.jpg) no-repeat center center/cover
 }
-.divs5{background-image:url(https://triple-slider.uiinitiative.com/images/justice-league.jpg) center no-repeat !important;
-background-size:cover;
+
+.carrousel div:nth-child(2) {
+
+    transform: rotateY(60deg) translateZ(270px);
+    background: url(image.jpg) no-repeat center center/cover
 }
-.divs6{background-image:url(https://www.francetvinfo.fr/pictures/Lh5Ulw_NqJPTDtPmz4QvBAnqSuU/752x423/2019/04/23/php8Zaq6g.jpg) center no-repeat !important;
-  background-size:cover;
+
+.carrousel div:nth-child(3) {
+
+    transform: rotateY(120deg) translateZ(270px);
+    background: url(image.jpg) no-repeat center center/cover
 }
-.divs7{background-image:url(https://images.squarespace-cdn.com/content/v1/58b3cae5d1758e0132a008c6/1635364298194-ZHU64OPJ4ZS40OOW2EH6/MHA_WHM_Concept_KeyArt_TrailerPoster-1280x720.jpg?format=2500w) center no-repeat !important;
-  background-size:cover;
+
+.carrousel div:nth-child(4) {
+
+    transform: rotateY(180deg) translateZ(270px);
+    background: url(image.jpg) no-repeat center center/cover
 }
-.divs8{background-image:url(https://thepressfree.com/wp-content/uploads/2022/01/Jujutsu-Kaisen-0-Date-de-sortie-en-salles-fixee-pour-800x445.jpg) center no-repeat !important;
-    background-size:cover;
+
+.carrousel div:nth-child(5) {
+
+    transform: rotateY(240deg) translateZ(270px);
+    background: url(image.jpg) no-repeat center center/cover
+}
+
+.carrousel div:nth-child(6) {
+
+    transform: rotateY(300deg) translateZ(270px);
+    background: url(image.jpg) no-repeat center center/cover
 }

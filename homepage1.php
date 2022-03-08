@@ -9,16 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
 
-   <!-- slick
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css%22%3E">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css%22%3E"> -->
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<!-- Add the slick-theme.css if you want default styling -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  
     
     <script src="https://kit.fontawesome.com/1a6e3a18e5.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/slider.css">
+<script src="assets/js/slider.js"></script>
 </head>
 <body>
     <!-- navbar -->
@@ -56,13 +52,13 @@
         <div class="slider-div" id="films">
            <div class="slider-div-title"><div class="slider-title" ><h2>Films</h2></div></div>
             <div class="slider-slider">
-                <?php include 'carrousel.php'?>
+                <?php include 'slider.php'?>
             </div>
         </div>
         <div class="slider-div" id="series">
         <div class="slider-div-title"><div class="slider-title" ><h2>Séries</h2></div></div>
             <div class="slider-slider">
-                <?php //include 'carrousel.php'?>
+                <?php include 'slider0.php'?>
             </div>
         </div>
     </section>
@@ -86,10 +82,7 @@
 
 
 
-    <script  src="https://code.jquery.com/jquery-3.0.0.min.js"  integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="  crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA="  crossorigin="anonymous"></script>
-<<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="assets/js/oui.js"></script>
+
     <!-- script carousel -->
     <script>
     var angle1 = 0;
