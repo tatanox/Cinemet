@@ -1,0 +1,36 @@
+.slider0{
+  width: 80%;
+  height: 80%;
+  margin:0 auto;
+}
+
+.ig-div{
+  width: 800px;
+  height: 100%;
+margin: 0 15px;
+}
+
+.divs1{background-image:url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg) center no-repeat !important;
+background-size:cover;
+}
+.divs2{background-image:url(https://triple-slider.uiinitiative.com/images/spider-man.jpg) center no-repeat !important;
+background-size:cover;
+}
+.divs3{background-image:url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg) center no-repeat !important;
+background-size:cover;
+}
+.divs4{background-image:url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg) center no-repeat !important;
+background-size:cover;
+}
+.divs5{background-image:url(https://triple-slider.uiinitiative.com/images/justice-league.jpg) center no-repeat !important;
+background-size:cover;
+}
+.divs6{background-image:url(https://www.francetvinfo.fr/pictures/Lh5Ulw_NqJPTDtPmz4QvBAnqSuU/752x423/2019/04/23/php8Zaq6g.jpg) center no-repeat !important;
+  background-size:cover;
+}
+.divs7{background-image:url(https://images.squarespace-cdn.com/content/v1/58b3cae5d1758e0132a008c6/1635364298194-ZHU64OPJ4ZS40OOW2EH6/MHA_WHM_Concept_KeyArt_TrailerPoster-1280x720.jpg?format=2500w) center no-repeat !important;
+  background-size:cover;
+}
+.divs8{background-image:url(https://thepressfree.com/wp-content/uploads/2022/01/Jujutsu-Kaisen-0-Date-de-sortie-en-salles-fixee-pour-800x445.jpg) center no-repeat !important;
+    background-size:cover;
+}

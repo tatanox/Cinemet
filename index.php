@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Metropolis VOD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -13,8 +13,8 @@
 <body>
     <!-- navbar -->
     <nav class="nav">
-        <a href="#" class="nav-btn sign-up">Connexion</a>
-        <a href="#" class="nav-btn sign-in">Inscription</a>
+        <a href="connexion.php" class="nav-btn sign-up">Connexion</a>
+        <a href="connexion.php" class="nav-btn sign-in">Inscription</a>
     </nav>
     <!-- banner -->
     <div class="banner">

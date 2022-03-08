@@ -291,7 +291,7 @@ width: 33.33%;
 }
 .slider-container-type{
     margin: 0px;
-    height: 100vh;
+    height: 200vh;
     width: auto;
     background-color: #444561;
     display:flex;
@@ -305,17 +305,34 @@ width: 33.33%;
     width:100%;
     display:flex;
     align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+}
+.slider-div-title{
+    margin:0%;
+    height:25%;
+    width:100%;
+    display:flex;
+    align-items: center;
+   justify-content: flex-start;
 }
 .slider-title{
     margin:0% 5%;
     background-color:#4E43B7;
     padding:0% 3%;
     width:auto;
-    height:10%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .slider-slider{
     margin:0%;
-
+    height:75%;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .controle{
 	
@@ -369,42 +386,42 @@ width: 33.33%;
     .carrousel div:nth-child(1) {
         
     transform: rotateY(0) translateZ(270px);
-    background:url(image.jpg) no-repeat center center/cover
+    background:url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg) no-repeat center center/cover
         
     }
         
     .carrousel div:nth-child(2) {
         
     transform: rotateY(60deg) translateZ(270px);
-    background:url(image.jpg) no-repeat center center/cover
+    background:url(https://triple-slider.uiinitiative.com/images/spider-man.jpg) no-repeat center center/cover
     
     }
         
     .carrousel div:nth-child(3) {
         
     transform: rotateY(120deg) translateZ(270px);
-    background:url(image.jpg) no-repeat center center/cover
+    background:url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg) no-repeat center center/cover
         
     }
         
     .carrousel div:nth-child(4) {
         
     transform: rotateY(180deg) translateZ(270px);
-    background:url(image.jpg) no-repeat center center/cover
+    background:url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg) no-repeat center center/cover
         
     }
         
     .carrousel div:nth-child(5) {
         
     transform: rotateY(240deg) translateZ(270px);
-    background:url(image.jpg) no-repeat center center/cover
+    background:url(https://triple-slider.uiinitiative.com/images/justice-league.jpg) no-repeat center center/cover
         
     } 
         
     .carrousel div:nth-child(6) {
         
     transform: rotateY(300deg) translateZ(270px);
-    background:url(image.jpg) no-repeat center center/cover
+    background:url(https://www.journaldugeek.com/content/uploads/2019/07/7797487034-avengers-endgame-en-salles-le-24-avril-2019.jpg) no-repeat center center/cover
         
     }	
 .breakpoint-container{
@@ -427,13 +444,26 @@ width: 33.33%;
     position:absolute;
     left: 3%;
 }
+.breakpoint-img-in{
+    size:cover;
+    height: 120%;
+    width: 100%;
+    margin-bottom: 25%;
+}
 .breakpoint-line{
     margin:0%;
     height:30%;
     width:80%;
     background-color: #4E43B7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.fa-police-box{
+    height:100%;
+    width:100%;
+}
 /* zone film */
 .banner1{
     margin: 0px;
@@ -495,4 +525,53 @@ width: 33.33%;
     height: 100vh;
     width: 100%;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
+.lecteur-video{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+ /* slider test */
+
+ .slider0{
+    width: 500px;
+    margin:0 auto;
+  }
+  
+  .ig-div{
+    width: 300px;
+    height: 300px;
+  margin: 0 15px;
+  }
+  
+  .divs1{background-image:url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg) center no-repeat;
+  background-size:cover;
+  }
+  .divs2{background-image:url(https://triple-slider.uiinitiative.com/images/spider-man.jpg) center no-repeat;
+  background-size:cover;
+  }
+  .divs3{background-image:url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg) center no-repeat;
+  background-size:cover;
+  }
+  .divs4{background-image:url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg) center no-repeat;
+  background-size:cover;
+  }
+  .divs5{background-image:url(https://triple-slider.uiinitiative.com/images/justice-league.jpg) center no-repeat;
+  background-size:cover;
+  }
+  .divs6{background-image:url(https://www.francetvinfo.fr/pictures/Lh5Ulw_NqJPTDtPmz4QvBAnqSuU/752x423/2019/04/23/php8Zaq6g.jpg) center no-repeat;
+    background-size:cover;
+  }
+  .divs7{background-image:url(https://images.squarespace-cdn.com/content/v1/58b3cae5d1758e0132a008c6/1635364298194-ZHU64OPJ4ZS40OOW2EH6/MHA_WHM_Concept_KeyArt_TrailerPoster-1280x720.jpg?format=2500w) center no-repeat;
+    background-size:cover;
+  }
+  .divs8{background-image:url(https://thepressfree.com/wp-content/uploads/2022/01/Jujutsu-Kaisen-0-Date-de-sortie-en-salles-fixee-pour-800x445.jpg) center no-repeat;
+      background-size:cover;
+  }

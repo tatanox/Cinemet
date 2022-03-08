@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Film: Thor Ragnarok</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
      <!-- navbar -->
     <nav class="nav1">
         <div class="nav1-container">
-        <div class="nav1-logo"><a href="#" class="nav-btn-logo ">Logo</a></div>
+        <div class="nav1-logo"><a href="homepage1.php" class="nav-btn-logo ">Logo</a></div>
         <div class="nav1-search"><input type="text" placeholder="Recherche . . ."></div>
     </div>
         <div class="nav1-btn-right">
@@ -41,7 +41,8 @@
     </section>
     <!-- lecteur video -->
     <section class="section-lecteur">
-        
+        <iframe src="https://www.youtube.com/embed/sd_67Nql34k" frameborder="0" allowfullscreen class="lecteur-video"></iframe>
+        <!-- <video src="https://www.youtube.com/watch?v=RtG6scyBIeM" class="lecteur-video"></video> -->
     </section>
     <!-- footer -->
     <section class="footer">
