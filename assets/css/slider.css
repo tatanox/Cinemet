@@ -9,14 +9,15 @@
 #slider {
   position: relative;
   width: 67.5%;
-  height: auto;
+  height: 640px;
   margin: auto;
   display: flex;
   align-items: center;
-  object-fit: cover;
 }
 #slide {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 #precedent,
 #suivant {
@@ -59,14 +60,15 @@
 #slider0 {
   position: relative;
   width: 67.5%;
-  height: auto;
+  height: 640px;
   margin: auto;
   display: flex;
   align-items: center;
-  object-fit: cover;
 }
 #slide0 {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 #precedent0,
 #suivant0 {

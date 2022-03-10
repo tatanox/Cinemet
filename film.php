@@ -20,7 +20,9 @@
         <div class="nav1-btn-right">
         <a href="#" class="nav1-btn">Connexion</a>
         <a href="#" class="nav1-btn">Inscription</a> 
+        <div class="nav1-burger"><i class="fa-solid fa-bars"></i></div>
         </div>
+        
     </nav> 
     <!-- banner film -->
     <div class="banner1">

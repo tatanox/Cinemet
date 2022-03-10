@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/1a6e3a18e5.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/slider.css">
+<link rel="stylesheet" href="assets/css/modal.css">
 <script src="assets/js/slider.js"></script>
 </head>
 <body>
@@ -36,14 +37,17 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                <div> <a href="film.php" class="carrousel"></a> </div>
+                <div> <a href="film.php" class="carrousel-link"></a> </div>
                 <div></div>
                 <div></div>
             </div>
         </div>
         <div class=controle>
-                <button onclick="carrousel1('-')">❮</button>
-                <button onclick="carrousel1('')">❯</button>
+                <button onclick="carrousel1('-')"><i class="fa-solid fa-angles-left"></i></button>
+                <div class="div-modal"> 
+                   <?php include('modal.php')?> 
+                </div>
+                <button onclick="carrousel1('')"><i class="fa-solid fa-angles-right"></i></button>
         </div>
      </div>
     </section>
@@ -56,7 +60,11 @@
             </div>
         </div>
         <div class="slider-div" id="series">
-        <div class="slider-div-title"><div class="slider-title" ><h2>Séries</h2></div></div>
+            <div class="slider-div-title">
+                <div class="slider-title" >
+                    <h2>Séries</h2>
+                </div>
+            </div>
             <div class="slider-slider">
                 <?php include 'slider0.php'?>
             </div>
@@ -82,7 +90,7 @@
 
 
 
-
+<script src="assets/js/modal.js"></script>
     <!-- script carousel -->
     <script>
     var angle1 = 0;
