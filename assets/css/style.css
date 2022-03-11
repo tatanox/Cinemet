@@ -70,7 +70,7 @@ a {
   width: 30px;
   height: 30px;
   position: absolute;
-  right: 2em;
+  left: 2em;
   top: 10px;
 }
 .nav-burger:hover {
@@ -118,14 +118,18 @@ a {
 }
 .banner-title {
   margin: 0px;
-  height: 20vh;
-  width: 30vw;
-  background-color: rgba(78, 67, 183, 0.6);
+  width: 450px;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 48px;
+}
+/* max width 480px */
+@media screen and (max-width: 480px) {
+  .banner-title img {
+    width: 80%;
+  }
 }
 .container {
   margin: 0px;
@@ -536,7 +540,7 @@ button {
 .banner1-title {
   margin: 0px;
   height: 20vh;
-  width: 30vw;
+  padding: 1em;
   background-color: rgba(78, 67, 183, 0.6);
   color: #ffffff;
   display: flex;

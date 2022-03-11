@@ -27,7 +27,8 @@
     <!-- banner -->
     <div class="banner">
         <div class="banner-title">
-            <h1>LOGO</h1>
+            <!-- img -->
+            <img src="assets/img/metropolis.png" alt="logo">
         </div>
     </div>
     <!-- conatainer image + text -->
