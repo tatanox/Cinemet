@@ -113,11 +113,11 @@ a {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 .banner-title {
-  margin: 0px;
+  margin-top: 120px;
   width: 450px;
   color: #ffffff;
   display: flex;
