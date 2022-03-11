@@ -15,19 +15,18 @@
 <body>
     <!-- navbar -->
     <nav class="nav">
-        <a href="connexion.php" class="nav-btn sign-up">Connexion</a>
-        <a href="connexion.php" class="nav-btn sign-in">Inscription</a>
         <!-- icone menu burger -->
         <div class="nav-burger burger-closed">
             <div class="nav-burger-line"></div>
             <div class="nav-burger-line"></div>
             <div class="nav-burger-line"></div>
         </div>
+        <a href="connexion.php" class="nav-btn sign-up">Connexion</a>
+        <a href="connexion.php" class="nav-btn sign-in">Inscription</a>
     </nav>
     <!-- banner -->
     <div class="banner">
         <div class="banner-title">
-            <!-- img -->
             <img src="assets/img/metropolis.png" alt="logo">
         </div>
     </div>

@@ -53,12 +53,12 @@ a {
 }
 .sign-up {
   position: absolute;
-  left: 2em;
+  left: 2rem;
   display: flex;
 }
 .sign-in {
   position: absolute;
-  right: 2em;
+  right: 2rem;
   display: flex;
 }
 .nav-btn:hover {
@@ -70,7 +70,7 @@ a {
   width: 30px;
   height: 30px;
   position: absolute;
-  left: 2em;
+  left: 2rem;
   top: 10px;
 }
 .nav-burger:hover {
