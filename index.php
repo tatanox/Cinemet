@@ -67,11 +67,15 @@
     </section>
     <!-- footer -->
     <section class="footer">
+        <div class="footer-icon-media"><i class="fa-brands fa-facebook-f fa-2x"></i></div>
+        <div class="footer-icon-media"><i class="fa-brands fa-instagram fa-2x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-facebook-f fa-3x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-instagram fa-3x"></i></div>
         <div class="footer-logo"><h2>LOGO</h2></div>
         <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
+        <div class="footer-icon-media"><i class="fa-brands fa-twitter fa-2x"></i></div>
+        <div class="footer-icon-media"><i class="fa-brands fa-youtube fa-2x"></i></div>
     </section>
 </body>
 </html>

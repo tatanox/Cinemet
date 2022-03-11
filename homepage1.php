@@ -27,6 +27,7 @@
         <div class="nav1-btn-right">
         <a href="#films" class="nav1-btn">Films</a>
         <a href="#series" class="nav1-btn">Séries</a>
+        <div class="nav1-burger"><i class="fa-solid fa-bars"></i></div>
         </div>
     </nav>
     <!-- section carrousselle film selection  -->
@@ -79,12 +80,16 @@
     </div>
    </section>
    <!-- footer -->
-    <section class="footer">
+   <section class="footer">
+        <div class="footer-icon-media"><i class="fa-brands fa-facebook-f fa-2x"></i></div>
+        <div class="footer-icon-media"><i class="fa-brands fa-instagram fa-2x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-facebook-f fa-3x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-instagram fa-3x"></i></div>
         <div class="footer-logo"><h2>LOGO</h2></div>
         <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
+        <div class="footer-icon-media"><i class="fa-brands fa-twitter fa-2x"></i></div>
+        <div class="footer-icon-media"><i class="fa-brands fa-youtube fa-2x"></i></div>
     </section>
 
 

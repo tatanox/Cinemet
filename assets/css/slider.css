@@ -108,3 +108,13 @@
 .fa-solid {
   color: #4E43B7;
 }
+
+@media only screen and (max-width: 768px){
+#slider, #slider0{
+  position:static;
+  width: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+}

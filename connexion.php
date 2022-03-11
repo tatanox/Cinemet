@@ -533,7 +533,7 @@ a.btn-goback:hover {
 <body translate="no" >
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
   <nav class="nav">
-        <a href="index.php" class="nav-btn sign-up">LOGO</a>
+        <a href="homepage1.php" class="nav-btn sign-up">LOGO</a>
         <a href="index.php" class="nav-btn sign-in">Accueil</a>
     </nav>
 <div class="container2">
