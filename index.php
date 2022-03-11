@@ -17,6 +17,12 @@
     <nav class="nav">
         <a href="connexion.php" class="nav-btn sign-up">Connexion</a>
         <a href="connexion.php" class="nav-btn sign-in">Inscription</a>
+        <!-- icone menu burger -->
+        <div class="nav-burger burger-closed">
+            <div class="nav-burger-line"></div>
+            <div class="nav-burger-line"></div>
+            <div class="nav-burger-line"></div>
+        </div>
     </nav>
     <!-- banner -->
     <div class="banner">
@@ -88,6 +94,8 @@
         <div class="footer-icon"><i class="fa-brands fa-twitter fa-3x"></i></div>
         <div class="footer-icon"><i class="fa-brands fa-youtube fa-3x"></i></div>
     </section>
+    <!-- script navbar.js -->
+    <script src="assets/js/navbar.js"></script>
 </body>
 
 </html>

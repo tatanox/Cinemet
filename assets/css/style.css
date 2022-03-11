@@ -1,138 +1,187 @@
 /*GLOBAL*/
-*{
-    margin: 0px;
-    padding: 0px;
-    color: #ffffff;
-    text-decoration: none;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  width: 100vw;
+  min-width: 100vw;
 }
 body {
-    background-color: #444561;
-    overflow-x: hidden;
+  background-color: #444561;
+  overflow-x: hidden;
+  width: 100vw;
+  font-size: 16px;
 }
-h2{
-   font-size: 36px;
-   color: #ffffff; 
+h2 {
+  font-size: 1.8em;
+  color: #ffffff;
 }
-p{
-    text-align: center;
-    color: #ffffff;
+p {
+  text-align: center;
+  color: #ffffff;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 /*not log page */
-.nav{
-    margin: 0px;
-    width: auto;
-    height: 5vh;
-    background-color: rgba(68, 69, 97, 0.6);
-    display:flex;
-    justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1px;
+.nav {
+  margin: 0px;
+  width: 100vw;
+  height: 50px;
+  background-color: rgba(68, 69, 97, 0.6);
+  display: flex;
+  /* sticky */
+  position: sticky;
+  top: 0px;
 }
-.nav-btn{
-    background-color:#4E43B7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    color: #ffffff;
-    height:100%;
-    width: 10%;
-    font-size: 24px;
-    text-transform: uppercase;
-} 
-.sign-up{
-    Margin-left:1.5%;
-    display: flex;
+.nav-btn {
+  background-color: #4e43b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  height: 50px;
+  padding: 1em;
+  font-size: 24px;
+  text-transform: uppercase;
 }
-.sign-in{
-    margin-right: 1.5%;
-    display: flex;
+.sign-up {
+  position: absolute;
+  left: 2em;
+  display: flex;
+}
+.sign-in {
+  position: absolute;
+  right: 2em;
+  display: flex;
 }
 .nav-btn:hover {
-background-color: #444561;
-color: white;
+  background-color: #444561;
+  color: white;
 }
-.banner{
-    margin: 0px;
-    height: 100vh;
-    width: auto;
-    background-image:url("../img/banner.png") ;
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.nav-burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 2em;
+  top: 10px;
 }
-.banner-title{
-    margin: 0px;
-    height: 20vh;
-    width:30vw;
-    background-color:rgba(78, 67, 183, 0.6);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px ;
+.nav-burger:hover {
+  cursor: pointer;
+  background-color: #2e2f3f;
 }
-.container{
-    margin: 0px;
-    height:100vh;
-    width:auto;
-    background-color:#444561;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.nav-burger-line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin: 6px 0;
 }
-.container-h2{
-    margin-top: 5%;
-    Margin-bottom: 5%;
-    height:20%;
-    width: 30%;
-    background-color:#4E43B7;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+/* media queries pour navbar */
+@media screen and (max-width: 768px) {
+  .nav-burger {
+    display: block;
+  }
+  .sign-up {
+    display: none;
+  }
+  .sign-in {
+    display: none;
+  }
 }
-.container-container{
-    margin:0%;
-    height: 70%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+@media screen and (max-width: 500px) {
+  .nav-btn {
+    font-size: 18px;
+  }
 }
-.container-text{
-    margin: 0px;
-    height: 100%;
-    width: 50%;
-    background-color:#4E43B7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+@media screen and (max-width: 360px) {
+  .nav-btn {
+    font-size: 14px;
+  }
 }
-.img{
-    height: 100%;
-    width: 100%;
+.banner {
+  margin-top: -50px;
+  height: 100vh;
+  width: auto;
+  background-image: url("../img/banner.png");
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.container-image{
-    margin: 0px;
-    height: 100%;
-    width: 50%;
+.banner-title {
+  margin: 0px;
+  height: 20vh;
+  width: 30vw;
+  background-color: rgba(78, 67, 183, 0.6);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
 }
-.parallaxe{
-    Margin: 0px;
-    height: auto;
-    height: 40vh;
-    background-image:url("../img/parallaxe.jpg");
+.container {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: #444561;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.container-h2 h2 {
+  background-color: #4e43b7;
+  padding: 1.4em;
+}
+.container-container {
+  margin: 0;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.container-text {
+  margin: 0px;
+  height: 100%;
+  width: 50%;
+  background-color: #4e43b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+.container-image {
+  margin: 0px;
+  height: 100%;
+  width: 50%;
+}
+.parallaxe {
+  margin: 0px;
+  height: auto;
+  height: 40vh;
+  background-image: url("../img/parallaxe.jpg");
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -140,483 +189,486 @@ color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.container2{
-    margin: 0px;
-    height:100vh;
-    width:auto;
-    background-color:#444561;
-    display: flex;
-    align-items: center;
+.container2 {
+  margin: 0px;
+  height: 100vh;
+  width: auto;
+  background-color: #444561;
+  display: flex;
+  align-items: center;
 }
-.container2-text{
-    margin: 0px;
-    height: 100%;
-    width: 50%;
-    background-color:#4E43B7;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 24px;
+.container2-text {
+  margin: 0px;
+  height: 100%;
+  width: 50%;
+  background-color: #4e43b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
 }
-.footer{
-    margin: 0px;
-    width:auto;
-    height:30vh;
-    background-color:#444561;
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
+.footer {
+  margin: 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: #444561;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.footer-icon{
-    margin: 0px;
-    width: 100px;
-    height:100px;
-    background-color:#4E43B7;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+.footer-icon {
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+  background-color: #4e43b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-logo{
-    margin: 0px;
-    width: 250px;
-    height: 100px;
-    background-color:#4E43B7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-logo {
+  margin: 0px;
+  width: 250px;
+  height: 100px;
+  background-color: #4e43b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* homepage*/
-.nav1{
-    margin: 0px;
-    width: auto;
-    height: 5vh;
-    background-color: rgba(68, 69, 97, 0.6);
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
+.nav1 {
+  margin: 0px;
+  width: auto;
+  height: 5vh;
+  background-color: rgba(68, 69, 97, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
 }
-.nav1-container{
-    margin:0%;
-    height: 100%;
-    width:66.67%;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+.nav1-container {
+  margin: 0%;
+  height: 100%;
+  width: 66.67%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.nav1-logo{
-    background-color:#4E43B7;
-    margin: 0% 1.5% 0% 1.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    color: #ffffff;
-    height:100%;
-    width: 8%;
-    font-size: 24px;
-    text-transform: uppercase; 
-    text-decoration: none!important;
+.nav1-logo {
+  background-color: #4e43b7;
+  margin: 0% 1.5% 0% 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  width: 8%;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none !important;
 }
-.nav1-btn-right{
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-height:100%;
-width: 33.33%;
+.nav1-btn-right {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 100%;
+  width: 33.33%;
 }
-.nav1-btn{
-    background-color:#4E43B7;
-    margin: 0% 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    color: #ffffff;
-    height:100%;
-    width: 30%;
-    font-size: 24px;
-    text-transform: uppercase;
-} 
+.nav1-btn {
+  background-color: #4e43b7;
+  margin: 0% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  width: 30%;
+  font-size: 24px;
+  text-transform: uppercase;
+}
 .nav1-btn:hover {
-    background-color: #444561;
-    color: white;
+  background-color: #444561;
+  color: white;
 }
-.nav1-burger{
-    display:none;
-    color: #ffffff;
-    height:100%;
-    width: 30%;
-    font-size: 24px;
-    background-color:#4E43B7;
-    margin: 0% 5%;
+.nav1-burger {
+  display: none;
+  color: #ffffff;
+  height: 100%;
+  width: 30%;
+  font-size: 24px;
+  background-color: #4e43b7;
+  margin: 0% 5%;
 }
-.nav-btn-logo{
-    background-color:#4E43B7;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none ;
-    color: #ffffff;
-    height:100%;
-    width: 100%;
-    font-size: 24px;
-    text-transform: uppercase;
-} 
+.nav-btn-logo {
+  background-color: #4e43b7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+  text-transform: uppercase;
+}
 .nav-btn-logo:hover {
-    background-color: #444561;
-    color: white;
+  background-color: #444561;
+  color: white;
 }
 .nav1-search {
-    margin: 0px;
-    height: 100%;
-    width:50%;
-    display: flex;
-    align-items: center;
+  margin: 0px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.nav1-search input[type="text"] {
+  float: right;
+  width: 50%;
+  height: 40%;
+  padding: 6px;
+  border: none;
 
+  margin-right: 5%;
+  font-size: 17px;
 }
-.nav1-search input[type=text] {
-    float: right;
-    width:50%;
-    height: 40%;
-    padding: 6px;
-    border: none;
-    
-    margin-right: 5%;
-    font-size: 17px;
+.slider-container {
+  margin: 0px;
+  height: 100vh;
+  width: auto;
+  background-color: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.slider-container{
-    margin: 0px;
-    height: 100vh;
-    width: auto;
-    background-color: #C4C4C4;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.slider-container-type {
+  margin: 0px;
+  height: 200vh;
+  width: auto;
+  background-color: #444561;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.slider-container-type{
-    margin: 0px;
-    height: 200vh;
-    width: auto;
-    background-color: #444561;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.slider-div {
+  margin: 0%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
-.slider-div{
-    margin:0%;
-    height:50%;
-    width:100%;
-    display:flex;
-    align-items: center;
-   justify-content: space-evenly;
-   flex-direction: column;
+.slider-div-title {
+  margin: 0%;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.slider-div-title{
-    margin:0%;
-    height:25%;
-    width:100%;
-    display:flex;
-    align-items: center;
-   justify-content: flex-start;
+.slider-title {
+  margin: 0% 5%;
+  background-color: #4e43b7;
+  padding: 0% 3%;
+  width: auto;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.slider-title{
-    margin:0% 5%;
-    background-color:#4E43B7;
-    padding:0% 3%;
-    width:auto;
-    height:20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider-slider {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.slider-slider{
-    margin: 0;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.controle {
+  display: grid;
+  grid: 4rem / repeat(3, 1fr);
+  place-items: center;
 }
-.controle{
-	
-    display:grid;
-    grid:4rem/repeat(3,1fr);
-    place-items:center
-        
-        }
-        
-    button{
-         
-    font-size: 4rem;
-    border: none;
-    cursor: pointer;
-    background: rgba(68, 69, 97, 0.6);
-    color: #4E43B7;
-        } 
 
-     .div-modal{
-         height: 100%;
-         width: 100%;
-         display:flex;
-        justify-content:center;
-        align-items:center;
-     }   
-        
-    .contenu-carrousel {
-        
-    margin: 5rem auto;
-    width: 300px;
-    height: 200px;
-    position: relative;
-    perspective: 1000px
-        
-    }
-    
-    .carrousel {
-        
-     height: 100%;
-     width: 100%;
-     position: absolute;
-     transform-style: preserve-3d;
-     transition: transform 1s;
-        
-    }
-    .carrousel-link{
-        height: 100%;
-     width: 100%;
-     position: absolute;
-     transform-style: preserve-3d;
-     transition: transform 1s;
-    }
+button {
+  font-size: 4rem;
+  border: none;
+  cursor: pointer;
+  background: rgba(68, 69, 97, 0.6);
+  color: #4e43b7;
+}
 
-    .carrousel div {
-        
-    backface-visibility: hidden;
-    box-shadow: 0 10px 10px rgba(0,0,0,.6);
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    outline: 1px solid transparent
-        
-    }
-        
-    .carrousel div:nth-child(1) {
-        
-    transform: rotateY(0) translateZ(270px);
-    background:url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg) no-repeat center center/cover
-        
-    }
-        
-    .carrousel div:nth-child(2) {
-        
-    transform: rotateY(60deg) translateZ(270px);
-    background:url(https://triple-slider.uiinitiative.com/images/spider-man.jpg) no-repeat center center/cover
-    
-    }
-        
-    .carrousel div:nth-child(3) {
-        
-    transform: rotateY(120deg) translateZ(270px);
-    background:url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg) no-repeat center center/cover
-        
-    }
-        
-    .carrousel div:nth-child(4) {
-        
-    transform: rotateY(180deg) translateZ(270px);
-    background:url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg) no-repeat center center/cover
-        
-    }
-        
-    .carrousel div:nth-child(5) {
-        
-    transform: rotateY(240deg) translateZ(270px);
-    background:url(https://triple-slider.uiinitiative.com/images/justice-league.jpg) no-repeat center center/cover
-        
-    } 
-        
-    .carrousel div:nth-child(6) {
-        
-    transform: rotateY(300deg) translateZ(270px);
-    background:url(https://www.journaldugeek.com/content/uploads/2019/07/7797487034-avengers-endgame-en-salles-le-24-avril-2019.jpg) no-repeat center center/cover
-        
-    }	
-.breakpoint-container{
-    position: relative;
-    margin: 0px;
-    width:auto;
-    height:30vh;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: #c4c4c4;
-    
+.div-modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.breakpoint-img{
-    margin:0% 0% 0% 5%;
-    height:50%;
-    width:10%;
-    border-radius: 50%;
-    background-color:#4E43B7;
-    position:absolute;
-    left: 3%;
+
+.contenu-carrousel {
+  margin: 5rem auto;
+  width: 300px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
 }
-.breakpoint-img-in{
-    size:cover;
-    height: 120%;
-    width: 100%;
-    margin-bottom: 25%;
+
+.carrousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
-.breakpoint-line{
-    margin:0%;
-    height:30%;
-    width:80%;
-    background-color: #4E43B7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.carrousel-link {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
-.fa-police-box{
-    height:100%;
-    width:100%;
+
+.carrousel div {
+  backface-visibility: hidden;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  outline: 1px solid transparent;
+}
+
+.carrousel div:nth-child(1) {
+  transform: rotateY(0) translateZ(270px);
+  background: url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg)
+    no-repeat center center/cover;
+}
+
+.carrousel div:nth-child(2) {
+  transform: rotateY(60deg) translateZ(270px);
+  background: url(https://triple-slider.uiinitiative.com/images/spider-man.jpg)
+    no-repeat center center/cover;
+}
+
+.carrousel div:nth-child(3) {
+  transform: rotateY(120deg) translateZ(270px);
+  background: url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg)
+    no-repeat center center/cover;
+}
+
+.carrousel div:nth-child(4) {
+  transform: rotateY(180deg) translateZ(270px);
+  background: url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg)
+    no-repeat center center/cover;
+}
+
+.carrousel div:nth-child(5) {
+  transform: rotateY(240deg) translateZ(270px);
+  background: url(https://triple-slider.uiinitiative.com/images/justice-league.jpg)
+    no-repeat center center/cover;
+}
+
+.carrousel div:nth-child(6) {
+  transform: rotateY(300deg) translateZ(270px);
+  background: url(https://www.journaldugeek.com/content/uploads/2019/07/7797487034-avengers-endgame-en-salles-le-24-avril-2019.jpg)
+    no-repeat center center/cover;
+}
+.breakpoint-container {
+  position: relative;
+  margin: 0px;
+  width: auto;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c4c4c4;
+}
+.breakpoint-img {
+  margin: 0% 0% 0% 5%;
+  height: 50%;
+  width: 10%;
+  border-radius: 50%;
+  background-color: #4e43b7;
+  position: absolute;
+  left: 3%;
+}
+.breakpoint-img-in {
+  size: cover;
+  height: 120%;
+  width: 100%;
+  margin-bottom: 25%;
+}
+.breakpoint-line {
+  margin: 0%;
+  height: 30%;
+  width: 80%;
+  background-color: #4e43b7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fa-police-box {
+  height: 100%;
+  width: 100%;
 }
 /* zone film */
-.banner1{
-    margin: 0px;
-    height: 100vh;
-    width: auto;
-    background-image: 
-     linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), 
+.banner1 {
+  margin: 0px;
+  height: 100vh;
+  width: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg);
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.banner1-title{
-    margin: 0px;
-    height: 20vh;
-    width:30vw;
-    background-color:rgba(78, 67, 183, 0.6);
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px ;
+.banner1-title {
+  margin: 0px;
+  height: 20vh;
+  width: 30vw;
+  background-color: rgba(78, 67, 183, 0.6);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
 }
-.banner1-title-img{
-    height:80%;
-    width:80%;
-    size: cover;
-    position: center;
+.banner1-title-img {
+  height: 80%;
+  width: 80%;
+  size: cover;
+  position: center;
 }
-.section-tri-text{
-    margin : 0px;
-    height: 100vh;
-    width: auto;
-    background-color: #444561;
-    color: #ffffff;
-    display:flex;
-    flex-direction: row;
+.section-tri-text {
+  margin: 0px;
+  height: 100vh;
+  width: auto;
+  background-color: #444561;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
 }
-.div-text{
-    margin : 0% 5%;
-    height: 100%;
-    width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    text-align: center;
+.div-text {
+  margin: 0% 5%;
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.div-text-h2{
-    margin-bottom: 5%;
-    top: 90%;
+.div-text-h2 {
+  margin-bottom: 5%;
+  top: 90%;
 }
-.section-lecteur{
-    margin:0%;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+.section-lecteur {
+  margin: 0%;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
-.lecteur-video{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
+.lecteur-video {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
- /* slider test */
+/* slider test */
 
- .slider0{
-    width: 500px;
-    margin:0 auto;
-  }
-  
-  .ig-div{
-    width: 300px;
-    height: 300px;
+.slider0 {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.ig-div {
+  width: 300px;
+  height: 300px;
   margin: 0 15px;
-  }
-  
-  .divs1{background-image:url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg) center no-repeat;
-  background-size:cover;
-  }
-  .divs2{background-image:url(https://triple-slider.uiinitiative.com/images/spider-man.jpg) center no-repeat;
-  background-size:cover;
-  }
-  .divs3{background-image:url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg) center no-repeat;
-  background-size:cover;
-  }
-  .divs4{background-image:url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg) center no-repeat;
-  background-size:cover;
-  }
-  .divs5{background-image:url(https://triple-slider.uiinitiative.com/images/justice-league.jpg) center no-repeat;
-  background-size:cover;
-  }
-  .divs6{background-image:url(https://www.francetvinfo.fr/pictures/Lh5Ulw_NqJPTDtPmz4QvBAnqSuU/752x423/2019/04/23/php8Zaq6g.jpg) center no-repeat;
-    background-size:cover;
-  }
-  .divs7{background-image:url(https://images.squarespace-cdn.com/content/v1/58b3cae5d1758e0132a008c6/1635364298194-ZHU64OPJ4ZS40OOW2EH6/MHA_WHM_Concept_KeyArt_TrailerPoster-1280x720.jpg?format=2500w) center no-repeat;
-    background-size:cover;
-  }
-  .divs8{background-image:url(https://thepressfree.com/wp-content/uploads/2022/01/Jujutsu-Kaisen-0-Date-de-sortie-en-salles-fixee-pour-800x445.jpg) center no-repeat;
-      background-size:cover;
-  }
+}
 
-  /* media queries */
+.divs1 {
+  background-image: url(https://triple-slider.uiinitiative.com/images/guardians-of-the-galaxy.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.divs2 {
+  background-image: url(https://triple-slider.uiinitiative.com/images/spider-man.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.divs3 {
+  background-image: url(https://triple-slider.uiinitiative.com/images/suicide-squad.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.divs4 {
+  background-image: url(https://triple-slider.uiinitiative.com/images/thor-ragnarok.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.divs5 {
+  background-image: url(https://triple-slider.uiinitiative.com/images/justice-league.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.divs6 {
+  background-image: url(https://www.francetvinfo.fr/pictures/Lh5Ulw_NqJPTDtPmz4QvBAnqSuU/752x423/2019/04/23/php8Zaq6g.jpg)
+    center no-repeat;
+  background-size: cover;
+}
+.divs7 {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/58b3cae5d1758e0132a008c6/1635364298194-ZHU64OPJ4ZS40OOW2EH6/MHA_WHM_Concept_KeyArt_TrailerPoster-1280x720.jpg?format=2500w)
+    center no-repeat;
+  background-size: cover;
+}
+.divs8 {
+  background-image: url(https://thepressfree.com/wp-content/uploads/2022/01/Jujutsu-Kaisen-0-Date-de-sortie-en-salles-fixee-pour-800x445.jpg)
+    center no-repeat;
+  background-size: cover;
+}
 
-  /* Media films */
-  @media only screen and (min-width: 768px){
-    h2{
-        font-size: 36px;
-        color: #ffffff; 
-     }
-     .nav-btn-logo
-      .nav1-burger{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        height:100%;
-        width: 30%;
-        font-size: 24px;
-        background-color:#4E43B7;
-        margin: 0% 5%;
-    }
-      }
+/* media queries */
+
+/* media queries pour container-text au max width 1150px et 1040px et 940px*/
+@media screen and (max-width: 1150px) {
+  .container-text {
+    font-size: 1.1em;
   }
+}
+@media screen and (max-width: 1040px) {
+  .container-text {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 940px) {
+  .container-text {
+    font-size: 1.2em;
+    width: 100%;
+  }
+  .container-image {
+    display: none;
+  }
+}
+/* media queries pour menu burger */
+@media only screen and (max-width: 768px) {
+  h2 {
+    color: #ffffff;
+  }
+}
