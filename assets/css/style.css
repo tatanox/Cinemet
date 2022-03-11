@@ -684,12 +684,24 @@ button {
 @media screen and (max-width: 480px) {
   .container-text,
   .container2-text {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 /* media queries pour menu burger */
 @media only screen and (max-width: 768px) {
   h2 {
     color: #ffffff;
+  }
+}
+/* media querie si hauteur du device est inférieur ou égale à 320px */
+@media only screen and (max-height: 560px) {
+    .container-text,
+    .container2-text {
+      font-size: 0.8em;
+    }
+}
+@media only screen and (max-height: 320px) {
+  .banner {
+    height: 500px !important;
   }
 }
