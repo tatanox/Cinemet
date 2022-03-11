@@ -35,6 +35,10 @@ window.addEventListener('resize', function() {
         document.querySelector('.sign-in').style.display = 'flex';
         document.querySelector('.sign-up').style.top = '0px';
         document.querySelector('.sign-in').style.top = '0px';
+        // mettre height de .nav à 50px
+        document.querySelector('.nav').style.height = '50px';
+        // mettre le margin top de banner à -50px
+        document.querySelector('.banner').style.marginTop = '-50px';
     }
 });
 // si la width passe en dessous de 769px, on cache sign-up et sign-in et on remet top à 50px
@@ -46,5 +50,9 @@ window.addEventListener('resize', function() {
         document.querySelector('.sign-in').style.display = 'none';
         document.querySelector('.sign-up').style.top = '50px';
         document.querySelector('.sign-in').style.top = '50px';
+        // mettre height de .nav à 50px
+        document.querySelector('.nav').style.height = '50px';
+        // mettre le margin top de banner à -50px
+        document.querySelector('.banner').style.marginTop = '-50px';
     }
 });
