@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -18,18 +21,8 @@
 <script src="assets/js/slider.js"></script>
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="nav1">
-        <div class="nav1-container">
-        <div class="nav1-logo"><a href="homepage1.php" class="nav-btn-logo ">Logo</a></div>
-        <div class="nav1-search"><input type="text" placeholder="Recherche . . ."></div>
-    </div>
-        <div class="nav1-btn-right">
-        <a href="#films" class="nav1-btn">Films</a>
-        <a href="#series" class="nav1-btn">Séries</a>
-        <div class="nav1-burger"><i class="fa-solid fa-bars"></i></div>
-        </div>
-    </nav>
+   <!-- navbar -->
+   <?php include('nav.php') ?>
     <!-- section carrousselle film selection  -->
     <section class="slider-container">
      <div class="slider">

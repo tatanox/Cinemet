@@ -12,10 +12,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="nav">
-        <a href="connexion.php" class="nav-btn sign-up">Connexion</a>
-        <a href="connexion.php" class="nav-btn sign-in">Inscription</a>
-    </nav>
+    <?php include('navnl.php') ?>
     <!-- banner -->
     <div class="banner">
         <div class="banner-title"><h1>LOGO</h1></div>

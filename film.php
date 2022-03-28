@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -12,18 +15,7 @@
 </head>
 <body>
      <!-- navbar -->
-    <nav class="nav1">
-        <div class="nav1-container">
-        <div class="nav1-logo"><a href="homepage1.php" class="nav-btn-logo ">Logo</a></div>
-        <div class="nav1-search"><input type="text" placeholder="Recherche . . ."></div>
-    </div>
-        <div class="nav1-btn-right">
-        <a href="#" class="nav1-btn">Connexion</a>
-        <a href="#" class="nav1-btn">Inscription</a> 
-        <div class="nav1-burger"><i class="fa-solid fa-bars"></i></div>
-        </div>
-        
-    </nav> 
+   <?php include('nav.php') ?>
     <!-- banner film -->
     <div class="banner1">
         <div class="banner1-title"><img src="https://triple-slider.uiinitiative.com/images/thor-ragnarok-logo.png" class="banner1-title-img"/></div>

@@ -29,25 +29,25 @@
     <div>
      <h3>   Acteurs </h3>
     <p class="resume">  
-        Chris Hemsworth <br>
-        Mark Ruffalo    <br>
-        Tom Hiddleston  <br>
-        Tessa Thompson  <br>
-        Cate Blanchett  <br>
-        Idris Elba      <br>
-        Anthony ToRolls <br>
+        Chris Hemsworth     <br>
+        Mark Ruffalo        <br>
+        Tom Hiddleston      <br>
+        Tessa Thompson      <br>
+        Cate Blanchett      <br>
+        Idris Elba          <br>
+        Anthony ToRolls     <br>
                     </p>
     </div>
     <div>
      <h3>   Commédiens de doublage </h3>
     <p class="resume">
-    Adrien Antoine <br>
-    Rémi Bichet <br>
-    Alexis Victor  <br>
-    Aurélie Konaté  <br>
-    Juliette Degenne <br>
-    Frantz Confiac  <br>
-    Jean-Pierre Moulin <br>
+    Adrien Antoine        <br>
+    Rémi Bichet           <br>
+    Alexis Victor         <br>
+    Aurélie Konaté        <br>
+    Juliette Degenne      <br>
+    Frantz Confiac        <br>
+    Jean-Pierre Moulin    <br>
     </p>
     </div>
   </div>
