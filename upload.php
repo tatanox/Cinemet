@@ -8,7 +8,6 @@ $targetDir = "uploads/";
 $fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-$count = $fileName->rowCount();
 
 
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
@@ -36,22 +35,22 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
 }
 
 // Display status message
-echo $statusMsg;
+// echo $statusMsg;
 
-    if($count == 1){
-        function generateRandomString($length = 10) {
-            $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-            $charactersLength = strlen($characters);
-            $randomString = '';
-            for ($i = 0; $i < $length; $i++) {
-                $randomString .= $characters[rand(0, $charactersLength - 1)];
-            }
-            return $randomString;
-        }
-        // Echo the random string.
-        // Optionally, you can give it a desired string length.
-        echo generateRandomString();
-    }else{
+//     if($count == 1){
+//         function generateRandomString($length = 10) {
+//             $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//             $charactersLength = strlen($characters);
+//             $randomString = '';
+//             for ($i = 0; $i < $length; $i++) {
+//                 $randomString .= $characters[rand(0, $charactersLength - 1)];
+//             }
+//             return $randomString;
+//         }
+//         // Echo the random string.
+//         // Optionally, you can give it a desired string length.
+//         echo generateRandomString();
+//     }else{
 
-    }
+//     }
 ?>
