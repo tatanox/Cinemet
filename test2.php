@@ -1,29 +1,4 @@
 <?php
-    // function RandomString()
-    // {
-    //     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    //     $randstring = '';
-    //     for ($i = 0; $i < 10; $i++) {
-    //         $randstring = $characters[rand(0, strlen($characters))];
-    //     }
-    //     return $randstring;
-    // }
-
-    // RandomString();
-    // echo $randstring;
-
-//     function generateRandomString($length = 10) {
-//         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-//         $charactersLength = strlen($characters);
-//         $randomString = '';
-//         for ($i = 0; $i < $length; $i++) {
-//             $randomString .= $characters[rand(0, $charactersLength - 1)];
-//         }
-//         return $randomString;
-//     }
-//     // Echo the random string.
-// // Optionally, you can give it a desired string length.
-//     echo generateRandomString();
 
 
 // Include the database configuration file
@@ -45,12 +20,14 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
 
     $fileName = uniqid('img_') . '.' . $fileType;
     var_dump($fileName);
-
+    var_dump($targetDir);
+    var_dump($fileType);
 
     if(in_array($fileType, $allowTypes)){
         
         // Upload file to server
-        if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+        if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetDir . $fileName)){
+            var_dump($targetDir . $fileName);
             // Insert image file name into database
             $insert = $db->query("INSERT into images (file_name, uploaded_on) VALUES ('".$fileName."', NOW())");
             if($insert){
