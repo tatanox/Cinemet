@@ -33,14 +33,20 @@ $statusMsg = '';
 
 // File upload path
 $targetDir = "uploads/";
-$fileName = basename($_FILES["file"]["name"]).$fileid;
+$fileName = basename($_FILES["file"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
-$fileid = "SELECT * FROM images WHERE id = :id "
+
+
 
 if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf');
+
+    $fileName = uniqid('img_') . '.' . $fileType;
+    var_dump($fileName);
+
+
     if(in_array($fileType, $allowTypes)){
         
         // Upload file to server
@@ -67,7 +73,3 @@ echo $statusMsg;
 
     
 
-
-    //ou ça 
-    //md5($filename)
-    //fe6dbefca221b544567d82f830fb9a1e
