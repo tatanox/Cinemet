@@ -7,7 +7,7 @@
     <title>Upload</title>
 </head>
 <body>
-<form action="test2.php" method="post" enctype="multipart/form-data">
+<form action="upload.php" method="post" enctype="multipart/form-data">
     Image à envoyer :
     <input type="file" name="file">
     <input type="submit" name="submit" value="Upload">
