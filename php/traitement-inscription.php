@@ -2,9 +2,9 @@
 
 include ('bdd.php');
 
-$pseudo = $_POST['pseudo_utilisateur'];
-$mail = $_POST['mail_utilisateur'];
-$mdp = $_POST['pw_utilisateur'];
+$pseudo = $_POST['pseudo_user'];
+$mail = $_POST['mail_user'];
+$mdp = $_POST['password_user'];
 $mdp2 = $_POST['confirmpassword'];
 
 
@@ -14,10 +14,10 @@ if($mdp == $mdp2){
     
     $mdp = password_hash( $mdp , PASSWORD_DEFAULT);
 
-    $sql = "SELECT * FROM utilisateur WHERE mail_utilisateur = :mail_utilisateur";
+    $sql = "SELECT * FROM users WHERE mail_user = :mail_user";
     $requete = $bdd->prepare($sql);
     $requete->execute(array(
-        ':mail_utilisateur' => $mail
+        ':mail_user' => $mail
     ));
     $testmail = 0;
     
@@ -26,7 +26,7 @@ if($mdp == $mdp2){
     
         
         
-        if ($mail == $resultat['mail_utilisateur']){
+        if ($mail == $resultat['mail_user']){
     
             $testmail = 1;
     
@@ -36,10 +36,10 @@ if($mdp == $mdp2){
     
     if($testmail == 0){ 
 
-    $sql = "SELECT * FROM utilisateur WHERE pseudo_utilisateur = :pseudo_utilisateur";
+    $sql = "SELECT * FROM utilisateur WHERE pseudo_user = :pseudo_user";
     $requete= $bdd->prepare($sql);
     $requete->execute(array(
-        ':pseudo_utilisateur' => $pseudo
+        ':pseudo_user' => $pseudo
       
     ));
     $count = $requete->rowCount();
@@ -51,12 +51,12 @@ if($mdp == $mdp2){
 
 
 
-                                                $sql = "INSERT INTO utilisateur (pseudo_utilisateur, pw_utilisateur, mail_utilisateur) VALUES (:pseudo_utilisateur, :pw_utilisateur, :mail_utilisateur)";
+                                                $sql = "INSERT INTO users (pseudo_user, password_user, mail_user) VALUES (:pseudo_user, :password_user, :mail_user)";
                                                 $requete= $bdd->prepare($sql);
                                                 $requete->execute(array(
-                                                    ':pseudo_utilisateur' => $pseudo,
-                                                    ':pw_utilisateur' => $mdp,
-                                                    ':mail_utilisateur' => $mail
+                                                    ':pseudo_user' => $pseudo,
+                                                    ':password_user' => $mdp,
+                                                    ':mail_user' => $mail
                                                 ));
 
                                                 header("location:../connexion.php?message=succes");

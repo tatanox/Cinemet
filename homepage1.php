@@ -28,12 +28,12 @@ session_start();
      <div class="slider">
      <div class="contenu-carrousel">
             <div id="carrousel1" class="carrousel">
-                <div></div>
-                <div></div>
-                <div></div>
                 <div> <a href="film.php" class="carrousel-link"></a> </div>
-                <div></div>
-                <div></div>
+                <div> <a href="film.php" class="carrousel-link"></a> </div>
+                <div> <a href="film.php" class="carrousel-link"></a> </div>
+                <div> <a href="film.php" class="carrousel-link"></a> </div>
+                <div> <a href="film.php" class="carrousel-link"></a> </div>
+                <div> <a href="film.php" class="carrousel-link"></a> </div>
             </div>
         </div>
         <div class=controle>

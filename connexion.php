@@ -152,7 +152,7 @@ body:before {
 
 <body translate="no" >
 <?php include('navnl.php') ?>
-  <form class='login-form' action="php/traitement-connexion.php" method="POST" name="form">
+  <form class='login-form' action="traitement-connexion.php" method="POST" name="form">
   <?php 
         if(isset($_GET['message'])){
             if($_GET['message']=='success'){
@@ -186,8 +186,10 @@ body:before {
     <input name="pw_utilisateur" id="password" class='lf--input' placeholder='Mot de passe' type='password' required>
   </div>
   <input class='lf--submit' type='submit' value='Connexion'>
+  <p>Identifiants: test <br> Mot de passe: test </p>
 </form>
 <!-- <a class='lf--forgot' href='#'>Forgot password?</a> -->
+
   
   
   

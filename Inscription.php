@@ -152,7 +152,7 @@ body:before {
 
 <body translate="no" >
 <?php include('navnl.php') ?>
-  <form class='login-form' action="php/traitement-inscription.php" method="POST" name="form">
+  <form class='login-form' action="traitement-inscription.php" method="POST" name="form">
   <?php 
         if(isset($_GET['message'])){
             if($_GET['message']=='error'){
